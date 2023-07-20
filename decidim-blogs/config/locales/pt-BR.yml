@@ -1,0 +1,63 @@
+pt-BR:
+  activemodel:
+    models:
+      decidim/blogs/create_post_event: Nova postagem no blog
+  activerecord:
+    models:
+      decidim/blogs/post:
+        one: Postagem
+        other: Postagens
+  decidim:
+    blogs:
+      actions:
+        author_id: Criar publicação como
+        confirm_destroy: Deseja mesmo excluir este post?
+        destroy: Excluir
+        edit: Editar
+        new: Nova postagem
+        title: Ações
+      admin:
+        models:
+          post:
+            name: Postar
+        posts:
+          edit:
+            save: Atualizar
+            title: Editar publicação
+          index:
+            title: Postagens
+          new:
+            create: Criar
+            title: Criar post
+          update:
+            invalid: Falha ao salvar o post.
+      models:
+        post:
+          fields:
+            author: Autor
+            body: Corpo
+      posts:
+        show:
+          view: Visualizar
+    components:
+      blogs:
+        name: Blog
+        settings:
+          global:
+            announcement: Anúncio
+            comments_enabled: Comentários ativados
+            comments_max_length: Tamanho máximo de comentários (deixe 0 para o valor padrão)
+          step:
+            announcement: Anúncio
+            comments_blocked: Comentários bloqueados
+            endorsements_blocked: Endossos bloqueados
+            endorsements_enabled: Endossos ativados
+    events:
+      blogs:
+        post_created:
+          email_intro: A postagem "%{resource_title}" foi publicada em "%{participatory_space_title}" que você está seguindo.
+          email_outro: Você recebeu esta notificação porque está seguindo "%{participatory_space_title}". Você pode deixar de segui-lo no link anterior.
+          email_subject: Nova postagem publicada em %{participatory_space_title}
+          notification_title: A postagem <a href="%{resource_path}">%{resource_title}</a> foi publicada em %{participatory_space_title}
+    statistics:
+      posts_count: Postagens

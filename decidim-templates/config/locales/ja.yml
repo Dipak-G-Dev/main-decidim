@@ -1,0 +1,83 @@
+ja:
+  activemodel:
+    attributes:
+      questionnaire:
+        title: タイトル
+      template:
+        description: 説明
+        name: 名前
+  decidim:
+    admin:
+      menu:
+        templates: テンプレート
+      templates:
+        apply:
+          error: テンプレートの適用に失敗しました。
+          success: テンプレートが適用されました。
+        copy:
+          error: テンプレートコピー中に問題が発生しました。
+          success: テンプレートは正常にコピーされました。
+        create:
+          error: テンプレート作成中に問題が発生しました。
+          success: テンプレートが作成されました。
+        destroy:
+          success: テンプレートを削除しました。
+        empty: テンプレートはまだありません。
+        update:
+          error: テンプレートの更新中に問題が発生しました。
+          success: テンプレートが更新されました。
+      titles:
+        template_types:
+          questionnaires: アンケートテンプレート
+        templates: テンプレート
+    models:
+      questionnaire_template:
+        fields:
+          questions: 質問数
+          title: 質問タイトル
+      template:
+        fields:
+          created_at: 作成日時
+        name: テンプレート
+    templates:
+      admin:
+        block_user_templates:
+          form:
+            save: 保存
+            template_title: テンプレート情報
+          index:
+            confirm_delete: このテンプレートを削除してもよろしいですか？
+            title: ユーザーメッセージをブロック
+          template_chooser:
+            select_template: テンプレート回答を選択
+        questionnaire_templates:
+          choose:
+            create_from_template: テンプレートから作る
+            description: 新しいアンケートを作成しようとしています。定義済みのテンプレートを選択し、後で変更できます。
+            label: テンプレートを選択
+            placeholder: テンプレートを選択
+            skip_template: スキップ
+          edit:
+            edit: 編集
+            empty: 質問はまだありません。
+            questionnaire: アンケート
+          form:
+            save: 保存
+            template_title: テンプレート情報
+            title: アンケートテンプレート %{questionnaire_for}
+          index:
+            confirm_delete: このテンプレートを削除してもよろしいですか？
+            title: アンケートテンプレート
+          preview:
+            current_step: ステップ %{step}
+            of_total_steps: / %{total_steps}
+            tos_agreement: 参加することにより、利用規約に同意します。
+      admin_log:
+        template:
+          create: "%{user_name} が %{resource_name} アンケートテンプレートを作成しました"
+          delete: "%{user_name} が %{resource_name} アンケートテンプレートを削除しました"
+          duplicate: "%{user_name} が %{resource_name} アンケートテンプレートを複製しました"
+          update: "%{user_name} が %{resource_name} アンケートテンプレートを更新しました"
+      template_types:
+        block_user: ユーザーメッセージをブロック
+        questionnaires: アンケート

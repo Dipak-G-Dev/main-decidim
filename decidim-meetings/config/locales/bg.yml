@@ -1,0 +1,8 @@
+bg:
+  decidim:
+    meetings:
+      actions:
+        invalid_destroy:
+          proposals_count:
+            one: 'Срещата не може да бъде премахната, понеже има %{count} участник свързан с нея:'
+            other: 'Срещата не може да бъде премахната, понеже има %{count} участника свързани с нея:'

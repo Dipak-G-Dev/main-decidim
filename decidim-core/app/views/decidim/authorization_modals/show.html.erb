@@ -1,0 +1,5 @@
+<% if redesign_enabled? %>
+  <%= cell "decidim/authorization_modal", authorizations %>
+<% else %>
+  <%= render partial: "decidim/authorization_modals/content" %>
+<% end %>

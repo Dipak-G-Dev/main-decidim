@@ -1,0 +1,14 @@
+<div class="address__container">
+  <%= icon "map-pin-line" %>
+  <div class="address">
+    <% if has_location? %>
+      <div class="address__location"><%= location %></div>
+    <% end %>
+
+    <div class="address__address"><%= address %></div>
+
+    <% if has_location_hints? %>
+      <div class="address__hints"><%= location_hints %></div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+sv:
+  activemodel:
+    attributes:
+      post:
+        decidim_author_id: Författare
+        title: Titel
+    models:
+      decidim/blogs/create_post_event: Nytt blogginlägg
+  activerecord:
+    models:
+      decidim/blogs/post:
+        one: Inlägg
+        other: Inlägg
+  decidim:
+    blogs:
+      actions:
+        author_id: Skapa inlägg som
+        confirm_destroy: Vill du radera inlägget?
+        destroy: Radera
+        edit: Redigera
+        new: Nytt inlägg
+        title: Åtgärder
+      admin:
+        models:
+          post:
+            name: Publicera
+        posts:
+          edit:
+            save: Uppdatera
+            title: Redigera inlägg
+          index:
+            title: Inlägg
+          new:
+            create: Skapa
+            title: Skapa inlägg
+          update:
+            invalid: Det gick inte att spara inlägget.
+      models:
+        post:
+          fields:
+            author: Författare
+            body: Innehåll
+            official_blog_post: Officiellt inlägg
+            title: Titel
+      posts:
+        show:
+          view: Visa
+    components:
+      blogs:
+        actions:
+          create: Skapa
+          destroy: Radera
+          update: Uppdatera
+        name: Blogg
+        settings:
+          global:
+            announcement: Meddelande
+            comments_enabled: Kommentarer aktiverade
+            comments_max_length: Maximal längd för kommentarer (Lämna 0 för standardvärde)
+          step:
+            announcement: Meddelande
+            comments_blocked: Kommentarer blockerade
+            endorsements_blocked: Instämmanden är blockerade
+            endorsements_enabled: Instämmanden tillåtna
+    events:
+      blogs:
+        post_created:
+          email_intro: Inlägget "%{resource_title}" har publicerats i "%{participatory_space_title}" som du följer.
+          email_outro: Du har fått det här meddelandet eftersom du följer "%{participatory_space_title}". Du kan sluta att följa det från den föregående länken.
+          email_subject: Ett nytt inlägg har publicerats i %{participatory_space_title}
+          notification_title: Inlägget <a href="%{resource_path}">%{resource_title}</a> har publicerats i %{participatory_space_title}
+    statistics:
+      posts_count: Inlägg

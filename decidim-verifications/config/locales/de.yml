@@ -1,0 +1,204 @@
+de:
+  activemodel:
+    attributes:
+      config:
+        available_methods: Verfügbare Methoden
+        offline: Offline
+        offline_explanation: Anweisungen zur Offline-Verifizierung
+        online: Online
+      id_document_information:
+        document_number: Dokumentennummer (mit Buchstaben)
+        document_type: Art des Dokuments
+      id_document_upload:
+        document_number: Dokumentennummer (mit Buchstaben)
+        document_type: Art Ihres Dokuments
+        user: Benutzer
+        verification_attachment: Gescannte Kopie Ihres Dokuments
+      offline_confirmation:
+        email: Benutzer Email
+      postal_letter_address:
+        full_address: Vollständige Adresse
+      postal_letter_confirmation:
+        verification_code: Bestätigungscode
+      postal_letter_postage:
+        full_address: Vollständige Adresse
+        verification_code: Bestätigungscode
+  decidim:
+    admin:
+      menu:
+        authorization_revocation:
+          before_date_info: Das ist nützlich, wenn der Prozess bereits begonnen hat und Sie die Rechte des vorherigen Prozesses zurückziehen möchten.
+          button: Alle entziehen
+          button_before: Entziehen vor Datum
+          destroy_ok: Alle übereinstimmenden Berechtigungen wurden erfolgreich entzogen.
+          info: Es gibt insgesamt %{count} verifizierte Teilnehmer.
+          title: Berechtigungen widerrufen
+        authorization_workflows: Berechtigungen
+    admin_log:
+      organization:
+        update_id_documents_config: "%{user_name} hat die Konfiguration für die Überprüfung von Identitätsdokumenten aktualisiert"
+      user:
+        grant_id_documents_offline_verification: "%{user_name} hat die Identitätsdokumente von %{resource_name} offline überprüft"
+    authorization_handlers:
+      admin:
+        id_documents:
+          help:
+            - Benutzer geben ihre Identitätsinformationen ein und laden eine Kopie ihres Dokuments hoch.
+            - Sie geben die Informationen ein, die im hochgeladenen Bild vorhanden sind.
+            - Die Informationen sollten mit denen übereinstimmen, die der Benutzer ausgefüllt hat.
+            - If you cannot clearly see the information or you cannot get it verified, you can reject the request and the user will be able to fix it.
+        postal_letter:
+          help:
+            - Benutzer fordern einen Bestätigungscode an, der an ihre Adresse gesendet werden soll.
+            - Sie senden den Brief mit dem Bestätigungscode an seine Adresse.
+            - Sie markieren den Brief als gesendet.
+            - Sobald Sie den Brief als gesendet markiert haben, kann der Benutzer den Code einführen und verifiziert werden.
+      csv_census:
+        name: Zensus der Organisation
+      direct: Direkte
+      help: Hilfe
+      id_documents:
+        name: Identitätsdokumente
+      multistep: Mehrschritt
+      name: Name
+      postal_letter:
+        name: Code per Post
+    verifications:
+      authorizations:
+        authorization_metadata:
+          info: 'Dies sind die Daten der aktuellen Verifizierung:'
+          no_data_stored: Keine gespeicherten Daten.
+        create:
+          error: Beim Erstellen der Autorisierung ist ein Fehler aufgetreten.
+          unconfirmed: Sie müssen Ihre E-Mail bestätigen, um sich zu autorisieren.
+        destroy:
+          error: Beim Löschen der Berechtigung ist ein Fehler aufgetreten.
+        first_login:
+          actions:
+            another_dummy_authorization_handler: Überprüfen Sie anhand eines anderen Beispiels des Autorisierungshandlers
+            csv_census: Vergewissern Sie sich anhand der Volkszählung der Organisation
+            dummy_authorization_handler: Überprüfen Sie anhand des Beispielautorisierungshandlers
+            dummy_authorization_workflow: Überprüfen Sie anhand des beispielhaften Autorisierungsworkflows
+            id_documents: Bestätigen Sie, indem Sie Ihr Identitätsdokument hochladen
+            postal_letter: Bestätigen Sie, indem Sie einen Bestätigungscode per Post erhalten
+            sms: Lassen Sie sich über einen Bestätigungscode per SMS verifizieren
+          title: Bestätigen Sie Ihre Identität
+          verify_with_these_options: 'Mit diesen Optionen können Sie Ihre Identität überprüfen:'
+        index:
+          expired_verification: Verifizierung abgelaufen
+          pending_verification: Ausstehende Verifizierung
+          show_renew_info: Klicken Sie, um die Verifizierung zu erneuern
+        new:
+          authorize: Senden
+          authorize_with: Bestätigen Sie mit %{authorizer}
+        renew_modal:
+          cancel: Stornieren
+          continue: Weiter
+          title: Verifizierung erneuern
+        skip_verification: Sie können dies für jetzt und %{link}überspringen
+        start_exploring: Fang an zu erforschen
+      csv_census:
+        admin:
+          census:
+            create:
+              error: Beim Import der Volkszählung ist ein Fehler aufgetreten.
+          destroy:
+            title: Löschen Sie alle Volkszählungsdaten
+          index:
+            empty: Es gibt keine Zensusdaten. Verwenden Sie das folgende Formular, um es mit einer CSV-Datei zu importieren.
+            title: Aktuelle Volkszählungsdaten
+          instructions:
+            body: Dazu müssen Sie die Systemverwaltung eingeben und der Organisation die csv_census-Berechtigungen hinzufügen
+            title: Sie müssen die CSV Zensus für diese Organisation aktivieren
+          new:
+            file: "CSV-Datei mit E-Mail-Daten"
+            info: 'Muss eine Datei im CSV-Format sein, mit nur einer Spalte der E-Mail-Adresse:'
+            submit: Datei hochladen
+            title: Laden Sie eine neue Volkszählung hoch
+        authorizations:
+          new:
+            error: Wir konnten Ihr Konto nicht bestätigen oder Sie befinden sich nicht in der Zählung der Organisation.
+            success: Ihr Konto wurde erfolgreich verifiziert.
+      dummy_authorization:
+        extra_explanation:
+          postal_codes:
+            one: Die Teilnahme ist auf Benutzer mit der Postleitzahl %{postal_codes}.
+            other: 'Die Teilnahme ist auf Benutzer mit einer der folgenden Postleitzahlen beschränkt: %{postal_codes}.'
+          scope: Die Teilnahme ist auf Benutzer mit dem Umgang %{scope_name} begrenzt.
+          user_postal_codes:
+            one: Die Teilnahme ist auf Teilnehmer mit der Postleitzahl %{postal_codes} beschränkt, und Ihre Postleitzahl ist %{user_postal_code}.
+            other: 'Die Teilnahme ist auf Teilnehmer mit einer der folgenden Postleitzahlen beschränkt: %{postal_codes}. Ihre Postleitzahl ist %{user_postal_code}.'
+          user_scope: Die Teilnahme ist auf Teilnehmer aus dem Bereich %{scope_name} beschränkt, und Ihr Bereich ist %{user_scope_name}.
+      id_documents:
+        admin:
+          config:
+            edit:
+              title: Konfiguration der Identitätsdokumente
+              update: Aktualisieren
+            update:
+              error: Beim Aktualisieren der Konfiguration ist ein Fehler aufgetreten.
+          confirmations:
+            new:
+              introduce_user_data: Stellen Sie die Daten in das Bild ein
+              reject: Ablehnen
+              verify: Überprüfen
+          offline_confirmations:
+            new:
+              cancel: Stornieren
+              introduce_user_data: Geben Sie die Benutzer-E-Mail und die Dokumentdaten ein
+              verify: Überprüfen
+          pending_authorizations:
+            index:
+              config: Konfig
+              offline_verification: Offline-Überprüfung
+              title: Ausstehende Überprüfungen
+              verification_number: 'Überprüfung #%{n}'
+        authorizations:
+          choose:
+            choose_a_type: 'Bitte wählen Sie aus, wie Sie verifiziert werden möchten:'
+            offline: Offline
+            online: Online
+            title: Überprüfen Sie sich anhand Ihres Ausweisdokuments
+          edit:
+            offline: Offline-Bestätigung verwenden
+            online: Online-Bestätigung verwenden
+            send: Überprüfung erneut anfordern
+          new:
+            send: Überprüfung anfordern
+            title: Laden Sie Ihr Identitätsdokument hoch
+        dni: Personalausweis
+        nie: NIE
+        passport: Reisepass
+      postal_letter:
+        admin:
+          pending_authorizations:
+            index:
+              address: Adresse
+              letter_sent_at: Brief an gesendet
+              mark_as_sent: Als gesendet markieren
+              not_yet_sent: Noch nicht gesendet
+              title: Laufende Überprüfungen
+              username: Nutzername
+              verification_code: Bestätigungscode
+        authorizations:
+          edit:
+            send: Bestätigen
+          new:
+            send: Schick mir einen Brief
+            title: Fordern Sie Ihren Bestätigungscode an
+      sms:
+        authorizations:
+          destroy:
+            success: Der Bestätigungscode wurde erfolgreich zurückgesetzt. Bitte geben Sie Ihre Telefonnummer erneut ein.
+          edit:
+            confirm_destroy: Möchten Sie den Bestätigungscode wirklich zurücksetzen?
+            destroy: Bestätigungscode zurücksetzen
+            resend: Sie haben den Bestätigungscode nicht erhalten?
+            send: Bestätigen
+            title: Geben Sie den Bestätigungscode ein, den Sie erhalten haben
+          new:
+            send: Senden Sie mir eine SMS
+            title: Fordern Sie Ihren Bestätigungscode an
+  errors:
+    messages:
+      uppercase_only_letters_numbers: muss groß geschrieben sein und darf nur Buchstaben und / oder Zahlen enthalten

@@ -1,0 +1,34 @@
+<% add_decidim_meta_tags(title: t("assemblies.index.title", scope: "decidim")) %>
+
+<%
+edit_link(
+  decidim_admin_assemblies.assemblies_path,
+  :read,
+  :assembly_list
+)
+%>
+
+<%= append_stylesheet_pack_tag "decidim_assemblies", media: "all" %>
+<%= append_javascript_pack_tag "decidim_assemblies" %>
+
+<% content_for :aside do %>
+  <h1 class="h3 md:h1 decorator"><%= t("decidim.menu.assemblies") %></h1>
+
+  <%= render partial: "decidim/shared/filters", locals: { filter_sections: } %>
+<% end %>
+
+<%= render layout:"layouts/decidim/shared/layout_two_col" do %>
+
+  <%= participatory_space_floating_help %>
+
+  <% if promoted_assemblies.any? %>
+    <section id="highlighted-assemblies" class="card__highlight-container">
+      <h2 class="h5 md:h3 decorator"><%= t("assemblies.index.promoted_assemblies", scope: "layouts.decidim") %></h2>
+      <% promoted_assemblies.each do |promoted_assembly| %>
+        <%= card_for promoted_assembly, highlight: true, size: :g %>
+      <% end %>
+    </section>
+  <% end %>
+
+  <%= render partial: "collection" %>
+<% end %>

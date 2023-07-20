@@ -1,0 +1,207 @@
+pl:
+  activemodel:
+    attributes:
+      config:
+        available_methods: Dostępne metody
+        offline: Offline
+        offline_explanation: Instrukcje do weryfikacji offline
+        online: Online
+      id_document_information:
+        document_number: Numer dokumentu (z literą)
+        document_type: Typ dokumentu
+      id_document_upload:
+        document_number: Numer dokumentu (z literą)
+        document_type: Typ twojego dokumentu
+        user: Użytkownik
+        verification_attachment: Zeskanowana kopia twojego dokumentu
+      offline_confirmation:
+        email: Adres e-mail użytkownika
+      postal_letter_address:
+        full_address: Pełny adres
+      postal_letter_confirmation:
+        verification_code: Kod weryfikacyjny
+      postal_letter_postage:
+        full_address: Pełny adres
+        verification_code: Kod weryfikacyjny
+  decidim:
+    admin:
+      menu:
+        authorization_revocation:
+          before_date_info: Przydatne, jeśli proces już się rozpoczął i chcesz cofnąć uprawnienia poprzedniego procesu.
+          button: Cofnij wszystkie
+          button_before: Cofnij uprawnienia nadane przed datą
+          destroy_ok: Pomyślnie wycofano wszystkie autoryzacje spełniające kryteria.
+          info: 'Całkowita liczba zweryfikowanych użytkowników: %{count}.'
+          title: Wycofanie autoryzacji
+        authorization_workflows: Autoryzacje
+    admin_log:
+      organization:
+        update_id_documents_config: "%{user_name} zaktualizował(a) konfigurację autoryzacji dokumentów tożsamości"
+      user:
+        grant_id_documents_offline_verification: "%{user_name} zweryfikował(a) %{resource_name} przy użyciu autoryzacji dokumentów tożsamości offline"
+    authorization_handlers:
+      admin:
+        id_documents:
+          help:
+            - Użytkownicy wypełniają swoje dane osobowe i przesyłają kopię swojego dokumentu.
+            - Wypełniasz widoczne na przesłanym obrazie.
+            - Informacje powinny pasować do tego, co użytkownik wypełnił.
+            - If you cannot clearly see the information or you cannot get it verified, you can reject the request and the user will be able to fix it.
+        postal_letter:
+          help:
+            - Użytkownicy proszą o kod weryfikacyjny, który zostanie wysłany na ich adres.
+            - Wysyłasz list na adres z kodem weryfikacyjnym.
+            - Oznaczasz list jako wysłany.
+            - Po oznaczeniu listu jako wysłany użytkownik będzie mógł wprowadzić kod i uzyskać weryfikację.
+      csv_census:
+        name: Spis organizacji
+      direct: Bezpośredni
+      help: Pomoc
+      id_documents:
+        name: Dokumenty tożsamości
+      multistep: Multi-Step
+      name: Imię
+      postal_letter:
+        name: Kod listem pocztowym
+    verifications:
+      authorizations:
+        authorization_metadata:
+          info: 'Oto dane z aktualnej weryfikacji:'
+          no_data_stored: Brak danych.
+        create:
+          error: Wystąpił błąd podczas tworzenia autoryzacji.
+          unconfirmed: Aby się autoryzować, musisz potwierdzić swój adres e-mail.
+        destroy:
+          error: Wystąpił błąd podczas usuwania uprawnień.
+        first_login:
+          actions:
+            another_dummy_authorization_handler: Sprawdź na przykładzie innego przykładu procedury obsługi autoryzacji
+            csv_census: Zweryfikuj w oparciu o spis organizacji
+            dummy_authorization_handler: Sprawdź na podstawie przykładowej procedury autoryzacji
+            dummy_authorization_workflow: Sprawdź w przykładowym przepływie pracy autoryzacji
+            id_documents: Uzyskaj weryfikację, przesyłając swój dokument tożsamości
+            postal_letter: Uzyskaj weryfikację, otrzymując kod weryfikacyjny za pośrednictwem poczty
+            sms: Uzyskaj weryfikację za pomocą SMS-a z kodem weryfikacyjnym
+          title: Zweryfikuj swoją tożsamość
+          verify_with_these_options: 'Oto dostępne opcje weryfikacji tożsamości:'
+        index:
+          expired_verification: Weryfikacja wygasła
+          pending_verification: Oczekująca weryfikacja
+          show_renew_info: Kliknij, aby odnowić weryfikację
+        new:
+          authorize: Wyślij
+          authorize_with: Zweryfikuj przy pomocy %{authorizer}
+        renew_modal:
+          cancel: Anuluj
+          continue: Dalej
+          title: Przedłuż weryfikację
+        skip_verification: Możesz to teraz pominąć i %{link}
+        start_exploring: zacznij odkrywać
+      csv_census:
+        admin:
+          census:
+            create:
+              error: Wystąpił błąd podczas importowania spisu.
+          destroy:
+            title: Usuń wszystkie dane spisu
+          index:
+            empty: Brak danych spisu. Użyj poniższego formularza, aby zaimportować spis za pomocą pliku CSV.
+            title: Aktualne dane spisu
+          instructions:
+            body: Aby to zrobić, musisz wejść do administracji systemem i dodać uprawnienia csv_census do organizacji
+            title: Musisz aktywować spis CSV dla tej organizacji
+          new:
+            file: "plik .csv z danymi e-maili"
+            info: 'Musi to być plik w formacie CSV zawierający tylko jedną kolumnę z adresem e-mail:'
+            submit: Prześlij plik
+            title: Prześlij nowy spis
+        authorizations:
+          new:
+            error: Nie mogliśmy zweryfikować Twojego konta lub nie znajdujesz się w spisie organizacji.
+            success: Twoje konto zostało pomyślnie zweryfikowane.
+      dummy_authorization:
+        extra_explanation:
+          postal_codes:
+            one: Udział jest ograniczony do użytkowników z kodem pocztowym %{postal_codes}.
+            few: 'Udział jest ograniczony do użytkowników, którzy mają jeden z następujących kodów pocztowych: %{postal_codes}.'
+            many: 'Udział jest ograniczony do użytkowników posiadających jeden z następujących kodów pocztowych: %{postal_codes}.'
+            other: 'Udział jest ograniczony do użytkowników, którzy mają jeden z następujących kodów pocztowych: %{postal_codes}.'
+          scope: Uczestnictwo jest ograniczone do uczestników z zakresu %{scope_name}.
+          user_postal_codes:
+            one: Uczestnictwo jest ograniczone do użytkowników z kodem pocztowym %{postal_codes} a twój kod to %{user_postal_code}.
+            few: 'Uczestnictwo jest ograniczone do użytkowników z kodami pocztowymi %{postal_codes} a twój kod to %{user_postal_code}.'
+            many: 'Uczestnictwo jest ograniczone do użytkowników z kodami pocztowymi %{postal_codes} a twój kod to %{user_postal_code}.'
+            other: 'Uczestnictwo jest ograniczone do użytkowników z kodami pocztowymi %{postal_codes} a twój kod to %{user_postal_code}.'
+          user_scope: Uczestnictwo jest ograniczone do użytkowników z zakresu %{scope_name} a twój zakres to %{user_scope_name}.
+      id_documents:
+        admin:
+          config:
+            edit:
+              title: Konfiguracja dokumentów tożsamości
+              update: Aktualizuj
+            update:
+              error: Wystąpił błąd podczas aktualizowania konfiguracji.
+          confirmations:
+            new:
+              introduce_user_data: Wprowadź dane z obrazu
+              reject: Odrzuć
+              verify: Zweryfikuj
+          offline_confirmations:
+            new:
+              cancel: Anuluj
+              introduce_user_data: Przedstaw adres e-mail użytkownika i dane dokumentu
+              verify: Zweryfikuj
+          pending_authorizations:
+            index:
+              config: Config
+              offline_verification: Weryfikacja offline
+              title: Oczekujące weryfikacje
+              verification_number: 'Weryfikacja # %{n}'
+        authorizations:
+          choose:
+            choose_a_type: 'Wybierz sposób weryfikacji:'
+            offline: Offline
+            online: Online
+            title: Zweryfikuj się, używając swojego dokumentu tożsamości
+          edit:
+            offline: Użyj weryfikacji offline
+            online: Użyj weryfikacji online
+            send: Poproś o ponowną weryfikację
+          new:
+            send: Poproś o weryfikację
+            title: Prześlij swój dokument tożsamości
+        dni: Dowód osobisty
+        nie: NIP
+        passport: Paszport
+      postal_letter:
+        admin:
+          pending_authorizations:
+            index:
+              address: Adres
+              letter_sent_at: List wysłany
+              mark_as_sent: Oznacz jako wysłany
+              not_yet_sent: Jeszcze nie wysłano
+              title: Trwające weryfikacje
+              username: Pseudonim
+              verification_code: Kod weryfikacyjny
+        authorizations:
+          edit:
+            send: Potwierdź
+          new:
+            send: Wyślij mi list
+            title: Poproś o kod weryfikacyjny
+      sms:
+        authorizations:
+          destroy:
+            success: Kod weryfikacyjny został pomyślnie zresetowany. Wprowadź ponownie swój numer telefonu.
+          edit:
+            confirm_destroy: Czy na pewno chcesz zresetować kod weryfikacyjny?
+            destroy: Zresetuj kod weryfikacyjny
+            send: Potwierdź
+            title: Wprowadź kod weryfikacyjny, który otrzymałeś
+          new:
+            send: Wyślij mi SMS-a
+            title: Poproś o kod weryfikacyjny
+  errors:
+    messages:
+      uppercase_only_letters_numbers: musi być wpisany wielkimi literami i zawierać wyłącznie litery i / lub cyfry

@@ -1,0 +1,19 @@
+<% if @forced_closed_initiatives %>
+  <%= cell("decidim/announcement", t("decidim.initiatives.initiatives.initiatives.closed_initiatives_warning"), callout_class: "warning") %>
+<% elsif initiatives.blank? %>
+  <%= cell("decidim/announcement", t("decidim.initiatives.initiatives.initiatives.no_initiatives_warning"), callout_class: "warning") %>
+<% end %>
+
+<%= render partial: "count" %>
+
+<div class="collection-sort-controls mb-8 mt-2">
+  <%= order_selector available_orders, i18n_scope: "decidim.initiatives.initiatives.orders" %>
+</div>
+
+<div class="card__grid-container">
+  <div class="card__grid-grid">
+    <%= render initiatives %>
+  </div>
+</div>
+
+<%= decidim_paginate initiatives %>

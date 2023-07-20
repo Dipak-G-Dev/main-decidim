@@ -1,0 +1,237 @@
+ro:
+  activemodel:
+    attributes:
+      result:
+        decidim_accountability_status_id: Stare
+        decidim_category_id: Categorie
+        decidim_scope_id: Domeniu de interes
+        description: Descriere
+        end_date: Data de sfârșit
+        meetings_ids: Inclusiv ședințele
+        progress: Progres
+        project_ids: Proiecte incluse
+        proposals: Propuneri incluse
+        start_date: Data de început
+        title: Titlu
+        updated_at: Ultima actualizare
+      status:
+        description: Descriere
+        key: Cheie
+        name: Nume
+        progress: Progresul
+      timeline_entry:
+        description: Descriere
+        entry_date: Data
+        title: Titlu
+    models:
+      decidim/accountability/proposal_linked_event: Propunere inclusă în rezultat
+      decidim/accountability/result_progress_updated_event: Progresul rezultatului actualizat
+  activerecord:
+    models:
+      decidim/accountability/result:
+        one: Rezultat
+        few: Rezultate
+        other: Rezultate
+  decidim:
+    accountability:
+      actions:
+        attachment_collections: Dosare
+        attachments: Atașamente
+        confirm_destroy: Sunteți sigur că doriți să ștergeți %{name}?
+        destroy: Ștergere
+        edit: Editare
+        import_csv: Importă CSV
+        new: '%{name} nou'
+        preview: Previzualizare
+        timeline_entries: Evoluția proiectului
+        title: Acțiuni
+      admin:
+        exports:
+          result_comments: Comentarii
+          results: Rezultate
+        import_results:
+          new:
+            download_export: Descarcați Export cu format CSV
+            import: Importă
+            title: Importați rezultate de la CSV
+        models:
+          result:
+            name: Rezultat
+          status:
+            name: Stadiu
+          timeline_entry:
+            name: Intrare cronologie
+        projects_import:
+          new:
+            create: Importă
+            select_component: Selectați componenta
+        results:
+          edit:
+            title: Editare rezultat
+            update: Actualizare rezultat
+          index:
+            title: Rezultate
+          new:
+            create: Creează rezultat
+            title: Rezultat nou
+        shared:
+          subnav:
+            statuses: Stadii
+        statuses:
+          edit:
+            title: Editare stadiu
+            update: Actualizare stadiu
+          index:
+            title: Stadii
+          new:
+            create: Creează stadiu
+            title: Stadiu nou
+        timeline_entries:
+          edit:
+            title: Editare înregistrare
+            update: Actualizare înregistrare
+          index:
+            title: Înregistrări în calendarul proiectului
+          new:
+            create: Creează înregistrare
+            title: Înregistrare nouă
+      admin_log:
+        result:
+          create: "%{user_name} a creat %{resource_name} în %{space_name}"
+          delete: "%{user_name} a șters %{resource_name} în %{space_name}"
+          update: "%{user_name} a actualizat %{resource_name} în %{space_name}"
+        status:
+          update: "%{user_name} a actualizat starea %{resource_name}"
+        timeline_entry:
+          create: "%{user_name} a creat intrarea de cronologie pentru %{resource_name}"
+          delete: "%{user_name} a șters intrarea de cronologie pentru %{resource_name}"
+          update: "%{user_name} a actualizat intrarea de cronologie pentru %{resource_name}"
+        value_types:
+          parent_presenter:
+            not_found: 'Elementul-părinte nu a fost găsit în baza de date (ID: %{id})'
+      content_blocks:
+        highlighted_results:
+          dates: Date
+          results: Rezultate
+          unspecified: Nespecificat
+      import_mailer:
+        import:
+          errors: Erori
+          row_number: Rând
+          subject: Importare cu succes a rezultatelor
+          success: Rezultate importate. Puteți revizui rezultatele în interfața de administrare.
+      import_projects_mailer:
+        import:
+          subject: Importul de proiecte a avut succes
+      last_activity:
+        new_result: 'Rezultat nou:'
+      models:
+        result:
+          fields:
+            category: Categorie
+            created_at: Creat
+            end_date: Dată de sfârșit
+            id: ID
+            progress: Progres
+            scope: Domeniu de interes
+            start_date: Dată de începere
+            status: Stadiu
+            title: Titlu
+        status:
+          fields:
+            description: Descriere
+            key: Cheie
+            name: Nume
+            progress: Progres
+        timeline_entry:
+          fields:
+            entry_date: Dată
+            title: Titlu
+      result_m:
+        executed: Executat
+        view: Vizualizare
+      results:
+        count:
+          results_count:
+            one: 1 rezultat
+            few: "%{count} rezultate"
+            other: "%{count} rezultate"
+        filters:
+          all: Toate
+        home:
+          categories_label: Categorii
+          subcategories_label: Subcategorii
+        home_header:
+          global_status: Stare execuție globală
+        nav_breadcrumb:
+          global: Execuție globală
+        search:
+          search: Caută acțiuni
+        show:
+          stats:
+            attendees: Participanți
+            back_to_resource: Înapoi la rezultat
+            comments: Comentarii
+            contributions: Contribuții
+            last_edited_by: Ultima editare de
+            last_updated_at: Ultima actualizare la
+            meetings: Întâlniri
+            proposals: Propuneri
+            votes: Voturi
+        timeline:
+          title: Evoluția proiectului
+    admin:
+      filters:
+        results:
+          category_id_eq:
+            label: Categorie
+          scope_id_eq:
+            label: Domeniu de interes
+          status_id_eq:
+            label: Stare
+    components:
+      accountability:
+        actions:
+          comment: Comentariu
+        name: Responsabilitate
+        settings:
+          global:
+            categories_label: Nume pentru "Categorii"
+            comments_enabled: Comentarii activate
+            comments_max_length: Lungimea maximă a comentariilor (Leave 0 pentru valoarea implicită)
+            display_progress_enabled: Afișare progres
+            heading_leaf_level_results: Nume pentru "Proiecte"
+            heading_parent_level_results: Nume pentru "Rezultate"
+            intro: Introducere
+            scope_id: Domeniu de interes
+            scopes_enabled: Domenii de interes activate
+            subcategories_label: Nume pentru "Subcategorii"
+          step:
+            comments_blocked: Comentarii blocate
+    events:
+      accountability:
+        proposal_linked:
+          email_intro: 'Propunerea "%{proposal_title}" a fost inclusă într-un rezultat. O puteți vedea de pe această pagină:'
+          email_outro: Ai primit această notificare deoarece urmărești „%{proposal_title}”. Poți anula aceste notificări de la link-ul anterior.
+          email_subject: O actualizare la %{proposal_title}
+          notification_title: Propunerea <a href="%{proposal_path}">%{proposal_title}</a> a fost inclusă în rezultatul <a href="%{resource_path}">%{resource_title}</a>.
+        result_progress_updated:
+          email_intro: 'Rezultatul "%{resource_title}", care include propunerea "%{proposal_title}", este acum %{progress}% complet. Îl puteți vedea de pe această pagină:'
+          email_outro: Ai primit această notificare deoarece urmărești „%{proposal_title}” și această propunere este inclusă în rezultatul „%{resource_title}”. Poți înceta să primești notificări urmând link-ul anterior.
+          email_subject: O actualizare la progresul %{resource_title}
+          notification_title: Rezultatul <a href="%{resource_path}">%{resource_title}</a>, care include propunerea <a href="%{proposal_path}">%{proposal_title}</a>, este acum %{progress}% complet.
+    metrics:
+      results:
+        description: Număr de rezultate generate
+        object: rezultate
+        title: Rezultate
+    participatory_spaces:
+      highlighted_results:
+        see_all: Vezi toate rezultatele (%{count})
+    resource_links:
+      included_projects:
+        result_project: Proiecte incluse în acest rezultat
+      included_proposals:
+        result_proposal: Propuneri incluse în acest rezultat
+    statistics:
+      results_count: Rezultate

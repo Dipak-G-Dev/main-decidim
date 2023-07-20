@@ -1,0 +1,220 @@
+tr:
+  activemodel:
+    attributes:
+      result:
+        decidim_accountability_status_id: Durum
+        decidim_category_id: Kategori
+        decidim_scope_id: kapsam
+        description: Açıklama
+        end_date: Bitiş tarihi
+        meetings_ids: Görüşmeler
+        progress: İlerleme
+        project_ids: Dahil edilen projeler
+        proposals: Dahil edilen teklifler
+        start_date: Başlangıç tarihi
+        title: Başlık
+        updated_at: Adresinde güncellendi
+      status:
+        description: Açıklama
+        key: anahtar
+        name: isim
+        progress: İlerleme
+      timeline_entry:
+        description: Açıklama
+        entry_date: tarih
+        title: Başlik / Unvani 
+    models:
+      decidim/accountability/proposal_linked_event: Teklif bir sonuca dahil edildi
+      decidim/accountability/result_progress_updated_event: Sonuç ilerlemesi güncellendi
+  activerecord:
+    models:
+      decidim/accountability/result:
+        one: Sonuç
+        other: Sonuçlar
+  decidim:
+    accountability:
+      actions:
+        attachment_collections: Klasörler 
+        attachments: Ekler 
+        confirm_destroy: Bu %{name}silmek istediğinize emin misiniz?
+        destroy: silmek
+        edit: Düzenle
+        import: Projeleri sonuçlara aktar 
+        import_csv: CSV'yi içe aktar
+        new: Yeni %{name}
+        preview: Ön izleme
+        timeline_entries: Proje evrimi
+        title: Eylemler
+      admin:
+        exports:
+          result_comments: Yorumlar
+          results: Sonuçlar
+        import_results:
+          new:
+            download_export: '  İhracat i CSV formatında indirin '
+            import: İçe aktar
+            title: Sonuçları CSV'den içe aktar
+        models:
+          result:
+            name: Sonuç
+          status:
+            name: durum
+          timeline_entry:
+            name: Zaman çizelgesi girişi
+        projects_import:
+          new:
+            create: İçe aktar
+            select_component: Bir bileşen seç
+        results:
+          edit:
+            title: Sonucu düzenle
+            update: Sonuç güncelle
+          index:
+            title: Sonuçlar
+          new:
+            create: Sonuç oluştur
+            title: Yeni sonuç
+        shared:
+          subnav:
+            statuses: durumlar
+        statuses:
+          edit:
+            title: Durumu düzenle
+            update: Güncelleme durumu
+          index:
+            title: durumlar
+          new:
+            create: Durum oluştur
+            title: Yeni statü
+        timeline_entries:
+          edit:
+            title: Girişi düzenle
+            update: Girişi güncelle
+          index:
+            title: Proje zaman çizelgesi girişleri
+          new:
+            create: Giriş oluştur
+            title: Yeni giriş
+      admin_log:
+        result:
+          create: "%{user_name} sonuç yaratmıştır %{resource_name} içinde %{space_name}"
+          delete: "%{user_name} %{resource_name} sonuçtan %{space_name}sildi"
+          update: "%{user_name} güncellenen sonuç %{resource_name} in %{space_name}"
+        value_types:
+          parent_presenter:
+            not_found: 'Üst veritabanında bulunamadı (ID: %{id})'
+      content_blocks:
+        highlighted_results:
+          dates: Tarih
+          results: Sonuç
+          unspecified: Belirtilmemiş
+      import_mailer:
+        import:
+          errors: Hatalar
+          row_number: Satır
+          subject: Sonuçların içe aktarılması başarılı
+          success: Sonuçların içe aktarılması başarılı. Sonuçları yönetim arayüzünde inceleyebilirsiniz.
+      models:
+        result:
+          fields:
+            category: Kategori
+            created_at: Oluşturuldu
+            end_date: Bitiş tarihi
+            id: ID
+            progress: İlerleme
+            scope: Kapsam
+            start_date: Başlangıç tarihi
+            status: durum
+            title: Başlık
+        status:
+          fields:
+            description: Açıklama
+            key: anahtar
+            name: isim
+            progress: İlerleme
+        timeline_entry:
+          fields:
+            entry_date: tarih
+      result_m:
+        executed: Yürütüldü
+        view: Görünüm
+      results:
+        count:
+          results_count:
+            one: 1 sonuç
+            other: "%{count} sonuç"
+        filters:
+          all: Herşey
+        home:
+          categories_label: Kategoriler
+          subcategories_label: Alt Kategoriler
+        home_header:
+          global_status: Genel yürütme durumu
+        nav_breadcrumb:
+          global: Global yürütme
+        search:
+          search: İşlemleri ara
+        show:
+          stats:
+            attendees: Katılımcılar
+            back_to_resource: Sonuca geri dön
+            comments: Yorumlar
+            contributions: Katılımlar
+            last_edited_by: Son düzenleyen
+            last_updated_at: Son güncelleme
+            meetings: Toplantılar
+            proposals: Teklifler
+            votes: Destekler
+        timeline:
+          title: Proje gelişimi
+    admin:
+      filters:
+        results:
+          category_id_eq:
+            label: Kategori
+          scope_id_eq:
+            label: Kapsam
+          status_id_eq:
+            label: Durum
+    components:
+      accountability:
+        name: Sorumluluk
+        settings:
+          global:
+            categories_label: '"Kategoriler" için isim'
+            comments_enabled: Yorumlar etkin
+            comments_max_length: Maksimum yorum uzunluğu (Varsayılan değer için 0 bırakın)
+            display_progress_enabled: İlerlemeyi göster
+            heading_leaf_level_results: '"Projeler" için isim'
+            heading_parent_level_results: '"Sonuçların" Adı'
+            intro: Tanıtım
+            scope_id: Kapsam
+            scopes_enabled: Kapsamlar etkinleştirildi
+            subcategories_label: '"Alt kategoriler" için isim'
+          step:
+            comments_blocked: Yorumlar engellendi
+    events:
+      accountability:
+        proposal_linked:
+          email_intro: '"%{proposal_title}" teklifi bir sonuca dahil edildi. Bu sayfadan görebilirsiniz:'
+          email_outro: Bu bildirimi "%{proposal_title}" takip ettiğiniz için aldınız. Bir önceki bağlantıdan takip etmeyi bırakabilirsiniz.
+          email_subject: '%{proposal_title} teklifi için bir güncelleme bulundu'
+          notification_title: <a href="%{proposal_path}">%{proposal_title}</a> teklifi <a href="%{resource_path}">%{resource_title}</a> sonucuna dahil edilmiştir.
+        result_progress_updated:
+          email_intro: '"%{proposal_title}" önerisini içeren "%{resource_title}" sonucu şimdi% %{progress}tamamlandı. Bu sayfadan görebilirsiniz:'
+          email_outro: '"%{proposal_title}" izlemekte olduğunuz için bu bildirimi aldınız ve bu teklif "%{resource_title}" sonucuna dahil edildi. Önceki bağlantıyı takip ederek bildirim almayı durdurabilirsiniz.'
+          email_subject: '%{resource_title} için bir güncelleme'
+          notification_title: '<a href="%{proposal_path}">%{proposal_title}</a> teklifini içeren <a href="%{resource_path}">%{resource_title}</a> sonucu: %{progress} tamamlandı.'
+    metrics:
+      results:
+        description: Üretilen sonuç sayısı
+        object: sonuçlar
+        title: Sonuçlar
+    participatory_spaces:
+      highlighted_results:
+        see_all: Tüm sonuçları gör (%{count})
+    resource_links:
+      included_projects:
+        result_project: Bu sonuca dahil edilen projeler
+      included_proposals:
+        result_proposal: Bu sonuca dahil teklifler

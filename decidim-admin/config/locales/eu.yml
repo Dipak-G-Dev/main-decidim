@@ -1,0 +1,1000 @@
+eu:
+  activemodel:
+    attributes:
+      area:
+        area_type: Eremu mota
+        name: Izena
+        organization: Erakundea
+      area_type:
+        name: Izena
+        organization: Erakundea
+        plural: plural
+      attachment:
+        attachment_collection_id: Karpeta
+        description: Descripción
+        file: Fitxategia
+        title: Erantsitakoaren edo irudiaren izena
+        weight: Kokapenaren hurrenkera
+      attachment_collection:
+        description: Deskribapena
+        name: Izena
+        weight: Kokapenaren hurrenkera
+      category:
+        description: Descripción
+        name: Izena
+        parent_id: Nagusia
+        weight: Kokapenaren hurrenkera
+      component:
+        name: Izena
+        published_at: Argitaratu at
+        weight: Kokapenaren hurrenkera
+      external_domain:
+        value: Balioa
+      help_section:
+        content: Edukia
+      id: NAN
+      import:
+        user_group_id: Inportatu hau bezala
+      newsletter:
+        body: Testua
+        subject: Gaia
+      organization:
+        alert_color: Alerta
+        available_authorizations: Baimen erabilgarriak
+        badges_enabled: Intsigniak gaitu
+        comments_max_length: Iruzkinen gehieneko luzera (utzi 0 defektuz konfigurazioa mantendu nahi baduzu)
+        cta_button_path: Deitu ekintza botoiaren bideora
+        cta_button_text: Deitu ekintza botoiaren testura
+        customize_welcome_notification: Pertsonalizatu ongietorri-jakinarazpena
+        default_locale: Eskualdeko ezarpen lehenetsiak
+        description: Deskribapena
+        enable_omnipresent_banner: Erakutsi omnipresent banner
+        enable_participatory_space_filters: Gaitu iragazkiak parte hartzeko gunean
+        facebook_handler: Facebook kudeatzailea
+        favicon: Ikonoa
+        force_authentication: Behartu autentikazioa
+        force_users_to_authenticate_before_access_organization: Behartu erabiltzaileak autentikatzera erakundean sartu baino lehen
+        from: Igorlearen helbide elektronikoa
+        github_handler: GitHub kudeatzailea
+        header_snippets: Goiburuko zatiak
+        highlight_alternative_color: Nabarmendua, aukerakoa
+        highlight_color: Nabarmendua
+        highlighted_content_banner_action_subtitle: Ekintza botoia azpititulua
+        highlighted_content_banner_action_title: Ekintza botoien titulua
+        highlighted_content_banner_action_url: Ekintza botoia URLa
+        highlighted_content_banner_enabled: Erakutsi nabarmendutako edukien bandera
+        highlighted_content_banner_image: Image
+        highlighted_content_banner_short_description: Deskribapen laburra
+        highlighted_content_banner_title: Izenburua
+        host: Zerbitzaria
+        instagram_handler: Instagram kudeatzailea
+        logo: Logotipo
+        machine_translation_display_priority: Itzulpen automatikoaren lehentasuna
+        machine_translation_display_priority_original: Lehen jatorrizko testua
+        machine_translation_display_priority_translation: Lehen itzulitako testua
+        name: Izena
+        official_img_footer: Logotipoaren logotipo ofiziala
+        official_img_header: Logotipoaren goiburu ofiziala
+        official_url: Erakundearen URL ofiziala
+        omnipresent_banner_short_description: Deskribapen laburra
+        omnipresent_banner_title: Izenburua
+        omnipresent_banner_url: URL
+        organization_admin_email: Erakundearen administratzailearen mezu elektronikoa
+        organization_admin_name: Erakundearen administratzailearen izena
+        organization_locales: Tokiko erakundeak
+        primary_color: Lehen
+        reference_prefix: Erreferentzia-aurrizkia
+        rich_text_editor_in_public_views: Gaitu testu-editore aberastua parte-hartzaileentzat
+        secondary_color: Bigarren
+        secondary_hosts: Bigarren mailako zerbitzariak
+        send_welcome_notification: Bidali ongietorri-jakinarazpena
+        success_color: Arrakasta
+        time_zone: Ordu-zona
+        tos_version: Zerbitzu-baldintzak bertsioa
+        twitter_handler: Twitter kudeatzailea
+        user_groups_enabled: Gaitu erabiltzaileen taldeak
+        users_registration_mode: Erabiltzaileak erregistratzeko modua
+        warning_color: Abisua
+        welcome_notification_body: Ongietorri-jakinarazpenaren mezuaren atala
+        welcome_notification_subject: Ongietorri-jakinarazpenaren mezuaren gaia
+        youtube_handler: YouTube kudeatzailea
+      participatory_space_private_user:
+        email: Helbide elektronikoa
+        name: Izena
+      scope:
+        code: Kodea
+        name: Izena
+        organization: Erakundea
+        parent_id: Guraso
+        scope_type: Esparru mota
+        scope_type_id: Esparru mota
+      scope_type:
+        name: Izena
+        organization: Erakundea
+        plural: Anitza
+      settings:
+        scope_id: Esparrua
+      static_page:
+        allow_public_access: Baimendu sarbidea balidatu gabe
+        changed_notably: Aldaketa nabarmenak izan dira.
+        content: Edukia
+        organization: Erakundea
+        show_in_footer: Erakutsi orri-oinean
+        slug: URL laburra
+        title: Titulua
+        topic_id: Gaia
+        weight: Kokapenaren hurrenkera
+      static_page_topic:
+        description: Deskribapena
+        show_in_footer: Erakutsi orri-oinean
+        title: Izenburua
+        weight: Kokapenaren hurrenkera
+      user_group_csv_verification:
+        file: file
+    errors:
+      models:
+        organization:
+          attributes:
+            official_img_footer:
+              allowed_file_content_types: Irudi fitxategi baliogabea
+            official_img_header:
+              allowed_file_content_types: Irudi fitxategi baliogabea
+        participatory_space_private_user_csv_import:
+          attributes:
+            file:
+              malformed: Fitxategia akastuna da. Irakurri arretaz jarraibideak eta ziurtatu fitxategia UTF-8an kodifikatuta dagoela.
+        user_group_csv_verification:
+          attributes:
+            file:
+              malformed: Fitxategia akastuna da. Irakurri arretaz jarraibideak eta ziurtatu fitxategia UTF-8an kodifikatuta dagoela.
+  activerecord:
+    attributes:
+      decidim/static_page:
+        content: Contenido
+        slug: URL laburra
+        title: Titulua
+      doorkeeper/application:
+        authorize_url: Baimendu URLa
+        client_id: Bezeroaren IDa
+        client_secret: Bezero sekretua
+        organization_name: Erakundearen izena
+        organization_url: Erakundearen URLa
+        redirect_uri: Birbideratu URIa
+        site: Web
+  decidim:
+    admin:
+      actions:
+        add: Gehitu
+        attachment:
+          new: Beste artxibo bat
+        browse: Arakatu
+        category:
+          new: Kategoria berria
+        export: Esportatu dena
+        export-selection: Esportatu hautatua
+        import: Inportatu
+        manage: Kudeatu
+        new: '%{name}berria'
+        newsletter:
+          new: Beste buletin bat
+        participatory_space_private_user:
+          new: Eremu parte-hartzaileko beste erabiltzaile pribatu bat
+        per_page: Orrialdeko
+        permissions: Baimenak
+        reject: Ukatu
+        share: Partekatu
+        user:
+          new: Administratzaile berria
+        verify: Egiaztatu
+      area_types:
+        create:
+          error: Errorea eremu mota berri bat sortzean.
+          success: Area mota sortu da.
+        edit:
+          title: Editatu eremu mota
+          update: Onartu
+        new:
+          create: Sortu eremu mota
+          title: Area mota berria
+        update:
+          error: Errore bat gertatu da eremu mota hau eguneratzean.
+      areas:
+        create:
+          error: Errore bat gertatu da area berri bat sortzean.
+          success: Area sortu da behar bezala.
+        destroy:
+          has_spaces: Eremu honek mendekotasuna duten espazioak ditu. Kendu aurretik, ziurtatu ez duela parte hartzeko gunerik aipatzen.
+        edit:
+          title: Editatu eremua
+          update: Onartu
+        new:
+          create: Sortu eremua
+          title: Area berria
+        no_areas: No Arloak
+        update:
+          error: Errore bat gertatu da eremu hau eguneratzean.
+      attachment_collections:
+        create:
+          error: Errore bat gertatu da karpeta berria sortzean.
+          success: Karpeta sortu da behar bezala.
+        destroy:
+          success: Karpeta ondo suntsitu da.
+        edit:
+          title: Editatu karpeta
+          update: Onartu
+        index:
+          attachment_collection_used: Karpeta hau ezin da ezabatu erabiltzen ari delako.
+          attachment_collections_title: Eranskinen karpetak
+        new:
+          create: Sortu
+          title: Karpeta berria
+        update:
+          error: Errore bat gertatu da karpeta hau eguneratzean.
+          success: Karpeta eguneratu da behar bezala.
+      attachments:
+        create:
+          error: Errorea gertatu da fitxategi erantsi bat sortzean.
+          success: Fitxategi erantsia zuzen sortu da.
+        destroy:
+          success: Fitxategi erantsia zuzen ezabatu da.
+        edit:
+          title: Editatu fitxategi erantsia
+          update: Eguneratu
+        index:
+          attachments_title: Eranskinak
+        new:
+          create: Sortu fitxategi erantsia
+          title: Fitxategi erantsi berria
+        update:
+          error: Errorea gertatu da fitxategi erantsi bat eguneratzean.
+          success: Fitxategi erantsia zuzen eguneratu da.
+      attachments_privacy_warning:
+        message: Kontuz ibili fitxategi erantsiekin espazio pribatu batean lan egiten duzunean, edozein parte-hartzailek parteka dezake dokumentu hau beste pertsona batzuekin.
+      autocomplete:
+        no_results: Ez da emaitzarik aurkitu
+      block_user:
+        new:
+          action: Blokeatu kontua eta bidali justifikazioa
+          description: Erabiltzaile baten blokeoak kontu erabilezina utziko du. Zure justifikazioan zein irizpideren arabera desblokeatuko zenukeen azaldu dezakezu.
+          justification: Justifikazioa
+          title: Blokeatu erabiltzaile hau %{name}
+      categories:
+        create:
+          error: Errorea gertatu da kategoria hau sortzean.
+          success: Kategoria zuzen sortu da.
+        destroy:
+          error: Errorea gertatu da kategoria hau ezabatzean. Mesedez, lehenik eta behin ezabatu azpikategoriak oro, ziurtatu beste ezein entitaterik ez dagoela kategoria honetan, eta saiatu berriro.
+          success: Kategoria zuzen ezabatu da.
+        edit:
+          title: Editatu kategoria
+          update: Eguneratu
+        index:
+          categories_title: Kategoriak
+          category_used: Kategoria hau ezin da ezabatu erabiltzen ari delako.
+        new:
+          create: Sortu kategoria
+          title: Kategoria berria
+        update:
+          error: Errorea gertatu da kategoria hau eguneratzean.
+          success: Kategoria zuzen eguneratu da.
+      component_permissions:
+        update:
+          error: Arazo bat izan da osagai honen baimenak eguneratzean.
+          success: Baimenak behar bezala eguneratu dira.
+      components:
+        create:
+          error: Errore bat gertatu da osagaia sortzean.
+          success: Osagaia zuzen sortu da.
+        destroy:
+          error: Errore bat gertatu da osagaia suntsitzen.
+          success: Osagaia zuzen ezabatu da.
+        edit:
+          title: Editatu osagaia
+          update: Onartu
+        form:
+          default_step_settings: Urratsen ezarpen lehenetsiak
+          global_settings: Ezarpen globalak
+          step_settings: Ezarpenen urratsak
+        index:
+          add: Gehitu osagaia
+          headers:
+            actions: Ekintzak
+            name: Osagaiaren izena
+            scope: Osagaiaren esparrua
+            type: Osagai mota
+        new:
+          add: Gehitu osagaia
+          title: 'Gehitu osagaia: %{name}'
+        publish:
+          success: Osagaia arrakastaz argitaratu da.
+        title: Osagaiak
+        unpublish:
+          success: Osagaia arrakastaz argitaratu da.
+        update:
+          error: Errore bat gertatu da osagaia eguneratzean.
+          success: Osagaia behar bezala eguneratu da.
+      conflicts:
+        attempts: Saiakerak
+        'false': 'Ez'
+        managed_user_name: Erabiltzaile kudeatua
+        solved: Ebatzita
+        title: Egiaztapen-arazoak
+        transfer:
+          email: Helbide elektronikoa
+          error: Errore bat gertatu da egungo parte-hartzailea transferitzean parte-hartzaile kudeatu bati.
+          name: Izena
+          reason: Arrazoia
+          success: Egungo transferentzia zuzen egin da.
+          title: Transferentzia
+        'true': 'Bai'
+        user_name: Erabiltzailea
+      dashboard:
+        pending_moderations:
+          anouncement:
+            one: '%{count} moderazo zain'
+            other: '%{count} moderazo zain'
+          goto_moderation: Joan moderazio globaletara
+          title: Zain dauden moderazioak
+        show:
+          view_more_logs: Ikusi gehiago erregistroak
+      domain_whitelist:
+        form:
+          domain_too_short: Domeinu laburregia
+      exports:
+        export_as: "%{name} honako hau gisa: %{export_format}"
+        formats:
+          CSV: CSV
+          Excel: Excel
+          FormPDF: PDF
+          JSON: JSON
+      filters:
+        category_id_eq:
+          label: Kategoria
+        filter_label: Iragazkia
+        invitation_accepted_at_present:
+          label: Gonbidapena onartu da
+          values:
+            'false': 'Ez'
+            'true': 'Bai'
+        last_sign_in_at_present:
+          label: Inoiz konektatu da
+          values:
+            'false': 'Ez'
+            'true': 'Bai'
+        moderated_users:
+          reports_reason_eq:
+            label: Arrazoiaren berri eman
+            values:
+              offensive: Iraingarria
+        moderations:
+          reportable_type_string_eq:
+            label: Mota
+        officialized_at_null:
+          label: Egoera
+          values:
+            'false': Officialized
+            'true': Ez ofiziala
+        participatory_space_private_users:
+          user_invitation_accepted_at_not_null:
+            label: Gonbidapena onartu da
+            values:
+              'false': Ez da onartu
+              'true': Onartuta
+          user_invitation_sent_at_not_null:
+            label: Gonbidapena bidali da
+            values:
+              'false': Ez da bidali
+              'true': Bidali da
+        private_space_eq:
+          label: Pribatua
+          values:
+            'false': Publikoa
+            'true': Pribatua
+        published_at_null:
+          label: Argitaratu da
+          values:
+            'false': Argitaratu da
+            'true': Ez da argitaratu
+        scope_id_eq:
+          label: Esparrua
+        search_label: Bilatu
+        search_placeholder:
+          name_or_nickname_or_email_cont: Bilatu %{collection} helbide elektroniko, izen edo ezizenaren arabera.
+          reported_id_string_or_reported_content_cont: Bilatu %{collection} eduki edo Id erreportablearen arabera.
+          title_cont: Bilatu %{collection} tituluaren arabera.
+          user_name_or_user_email_cont: Bilatu %{collection} helbide elektroniko, izen edo ezizenaren arabera.
+          user_name_or_user_nickname_or_user_email_cont: Bilatu %{collection} helbide elektroniko, izen edo ezizenaren arabera.
+        state_eq:
+          label: Egoera
+          values:
+            all: Guztiak
+            pending: Zain
+            rejected: Ukatua
+            verified: Egiaztatuta
+      forms:
+        file_help:
+          import:
+            explanation: 'Jarraibideak artxiborako:'
+            message_1: CSV, JSON eta Excel (.xlsx) artxiboak eutsita daude
+            message_2: CSV artxiboetarako, zutabeen arteko banatzailea puntu eta koma (";") izan behar da
+      help_sections:
+        form:
+          save: Gorde
+      impersonatable_users:
+        index:
+          filter:
+            all: Guztiak
+            managed: Kudeatutako
+            not_managed: Ez da kudeatzen
+          filter_by: Iragazi arabera
+          impersonate: Ordeztu
+          impersonate_new_managed_user: Ordezkatu erabiltzaile kudeatu berria
+          managed: Kudeatutako
+          name: Izena
+          needs_authorization_warning: Gutxienez baimen gaitu bat behar duzu erakunde honendako.
+          not_managed: Ez da kudeatzen
+          promote: Sustatu
+          search: Bilatu
+          status: Egoera
+          view_logs: Ikusi erregistroak
+      impersonations:
+        close_session:
+          error: Errore bat gertatu da egungo suplifikaziorako saioa ixtean.
+          success: Uneko sinplifikazioa saioa amaitu da.
+        create:
+          error: Errore bat gertatu da erabiltzailea imitatzen.
+          success: Erabiltzaile kudeatua arrakastaz sortu da.
+        form:
+          authorization_method: Baimenaren metodoa
+          name: izena
+          reason: Arrazoia
+        new:
+          impersonate: Ordeztu
+          impersonate_existing_managed_user: Ordezkatu "%{name}" erabiltzaile kudeatua
+          impersonate_existing_user: '"%{name}" erabiltzailea ordezkatzen du'
+          impersonate_new_managed_user: Ordezkatu erabiltzaile kudeatu berria
+      imports:
+        and: eta
+        data_errors:
+          duplicate_headers:
+            detail: Mesedez, egiaztatu fitxategiak behin bakarrik eskatzen diren zutabeak edo goiburuak dituela.
+            message:
+              one: Bikoiztu zutabeak %{columns}.
+              other: Bikoiztu %{columns} zutabe.
+          invalid_indexes:
+            lines:
+              detail: "\nEgiaztatu erregistro horiek formatu zuzena dutela eta baliozko erregistroak dituztela."
+            records:
+              detail: "\nEgiaztatu erregistro horiek formatu zuzena dutela eta baliozko erregistroak dituztela."
+        new:
+          accepted_mime_types:
+            csv: csv
+            json: json
+            xlsx: xlsx
+          actions:
+            back: Atzera
+          download_example: Deskargatu adibidea
+          file_legend: Gehitu prozesatuko den inportazio-artxibo bat.
+          import: Inportatu
+      managed_users:
+        promotion:
+          error: Errorea gertatu da kudeatutako erabiltzailea mailaz igotzean.
+          success: Kudeatutako erabiltzailea zuzen igo da mailaz.
+        promotions:
+          new:
+            explanation: Kudeatutako erabiltzaileak erabiltzaile estandar mailara igo daitezke. Horrek esan nahi du aplikaziora gonbidatuak izanen direla eta ezingo direla berriro ere ordeztu. Erabiltzaile gonbidatuak mezu elektroniko bat jasoko du gonbita onartzeko.
+            new_managed_user_promotion: Kudeatutako erabiltzaileen maila igoera berria
+            promote: Goratu
+      menu:
+        admin_log: Admin jarduera erregistroa
+        admins: Administratzaileak
+        appearance: Itxura
+        area_types: Area motak
+        areas: Arloak
+        configuration: konfigurazioa
+        dashboard: Kontrol-panela
+        external_domain_whitelist: Kanpoko domeinuak baimenduta
+        help_sections: Laguntza atalak
+        homepage: Hasiera
+        impersonations: impersonations
+        moderation: Moderazio globalak
+        newsletters: Buletinak
+        participants: Parte-hartzaileak
+        scope_types: Esparru motak
+        scopes: Esparruak
+        settings: Ezarpenak
+        static_pages: Orriak
+        user_groups: Erabiltzaile-taldeak
+        users: Erabiltzaileak
+      metrics:
+        metrics:
+          see_more_metrics: Ikusi metrika gehiago
+      models:
+        area:
+          fields:
+            area_type: Area mota
+            name: izena
+        area_type:
+          fields:
+            name: izena
+            plural: plural
+        attachment:
+          fields:
+            collection: karpeta
+            content_type: Mota
+            file_size: Tamaina
+            title: Titulua
+          name: Fitxategi erantsia
+        attachment_collection:
+          name: karpeta
+        category:
+          name: Kategoria
+        impersonation_log:
+          fields:
+            admin: Administratzailea
+            ended_at: 'Bukaera-data:'
+            expired_at: 'Iraungitze-data:'
+            reason: Arrazoia
+            started_at: 'Hasiera-ordua:'
+            user: Erabiltzailea
+        newsletter:
+          fields:
+            created_at: Sortze-data
+            progress: ' Aurrerapena '
+            sent_at: ' Bidalketa-data: '
+            sent_to: Hona bidalia
+            subject: Gaia
+          name: Buletina
+        participatory_space_private_user:
+          name: Partaidetza espazioa erabiltzaile pribatua
+        scope:
+          fields:
+            name: Izena
+            scope_type: Esparru mota
+        scope_type:
+          fields:
+            name: Izena
+            plural: Anitza
+        share_token:
+          fields:
+            created_at: Noiz sortua
+            expires_at: Noiz iraungia
+            last_used_at: Noiz erabilia azkenik
+            times_used: Erabilitako denbora
+            token: Sinboloak
+            user: Nork sortua
+        static_page:
+          fields:
+            created_at: Tan sortua
+            title: Titulua
+        user:
+          fields:
+            created_at: Sortze-data
+            email: Helbide elektronikoa
+            last_sign_in_at: Identifikazioaren azken-data
+            name: Izena
+            role: Rola
+            roles:
+              admin: Administratzailea
+              user_manager: Erabiltzailearen kudeatzailea
+          name: Erabiltzailea
+        user_group:
+          fields:
+            actions: Ekintzak
+            created_at: Tan sortua
+            document_number: Agiri-zenbakia
+            name: Izena
+            phone: Telefonoa
+            state: Egoera
+            users_count: Erabiltzaile kopurua
+      moderated_users:
+        index:
+          actions:
+            block: Blokeatutako erabiltzailea
+            title: Ekintzak
+            unblock: Desblokeatu erabiltzailea
+            unreport: Desegin salaketa
+          name: Izena
+          nickname: Ezizena
+          reason: Arrazoia
+          reports: Salaketa kopurua
+        report:
+          reasons:
+            does_not_belong: Ez da bidezkoa
+            offensive: Iraingarria
+            spam: Spam
+        tabs:
+          blocked: Blokeatuta
+          unblocked: Ez blokeatuta
+      moderations:
+        report:
+          reasons:
+            does_not_belong: Ez du zer ikusirik
+            offensive: Iraingarria
+            spam: Spam
+        reports:
+          index:
+            author: Egilea(k)
+            callout_html: Eduki bat moderazio-panelean agertzen da erabiltzaile batek (erregistratutako kontu bat duen edozein pertsona izan daiteke) txostena bidaltzen duenean, edukiaren ondoan dagoen %{icon} ikonoan klik eginez.
+            content_original_language: Jatorrizko edukiaren hizkuntza
+            participatory_space: Parte hartzeko esparrua
+            reported_content: Erreportatutako edukia
+            see_current: Ikusi egungoa
+            see_original: Ikusi jatorrizkoa
+            title: Moderazio-txostenak
+          show:
+            report_details: Arrazoiaren xehetasunak
+            report_language: Txostenaren hizkuntza
+            report_reason: Arrazoia
+            title: Txostenaren xehetasunak
+      newsletter_templates:
+        index:
+          preview_template: Aurreikusi
+          title: Buletinerako txantiloiak
+          use_template: Erabili txantiloi hau
+        show:
+          preview: 'Aurrebistaratu txantiloia: %{template_name}'
+          use_template: Erabili txantiloi hau
+      newsletters:
+        create:
+          error: ' Errorea gertatu da buletin hau sortzean.'
+          success: Buletina zuzen sortu da. Mesedez, berrikusi bidali baino lehen.
+        deliver:
+          error: Errorea gertatu da buletin hau entregatzean.
+          success: Buletina ongi bidali da.
+        destroy:
+          error_already_sent: 'Albiste-buletina ezin da deuseztatu: Bidalita dago jada.'
+          success: Buletina ongi deuseztatu da.
+        edit:
+          save_and_preview: Gorde eta aurreikusi
+          title: Editatu buletina
+        index:
+          all: denak
+          all_users: 'Erabiltzaile guztiak '
+          and: 'eta '
+          confirm_delete: Ziur zaude buletin hau deuseztatu nahi duzula?
+          followers: 'jarraitzaileak '
+          has_been_sent_to: 'Honi bidalia: '
+          no_scopes: Esparrurik gabe
+          not_sent: Ez bidalita
+          participants: 'parte-hartzaileak '
+          segmented_to: 'Honentzat zatitua %{subject}: '
+          subscribed_count: 'Harpidetuak:'
+          title: Buletinak
+        new:
+          save: Gorde
+          title: Buletin berria
+        select_recipients_to_deliver:
+          all_spaces: Denak
+          all_users_help: Bidali albisteen buletina baieztatu duten parte-hartzaile guztiei.
+          confirm_deliver: Ziur zaude buletin hau bidali nahi duzula? Ekintza hau ezin da desegin.
+          deliver: Bidali buletina
+          followers_help: Bidali albisteen buletina baieztatu duten eta zerrendan aukeratutako edozein eremu jarraitzen duten parte-hartzaile guztiei.
+          none: Bat ere ez
+          participants_help: Bidali albisteen buletina baieztatu duten eta zerrendan aukeratutako edozein eremu parte-hartzailetan esku hartu duten parte-hartzaile guztiei.
+          recipients_count: 'Buletin hau erabiltzaile hauei bidaliko zaie: <strong id=''recipients_count''>%{count}</strong>.'
+          scopes_help: Bidali albisteen buletina "Nire interesekoak" konfigurazioan edozein esparru aktibatuta duten parte-hartzaileei.
+          select_scopes: Iragazi "Nire interesekoak" konfigurazioan edozein esparru aktibatu duten parte-hartzaileentzat.
+          select_spaces: Hautatu espazioak buletina zatitzeko
+          select_users: Hautatu zein erabiltzaileri bidali nahi diezun buletina
+          send_to_all_users: Bidali erabiltzaile guztiei
+          send_to_followers: Bidali jarraitzaileei
+          send_to_participants: Bidali parte-hartzaileei
+          title: Hautatu hartzaileak
+          warning: "<strong>Adi:</strong> Jakinarazpen-doikuntzetan “Albiste-buletinak jaso nahi ditut” aktibatu duten parte-hartzaileei baino ez zaie bidaliko buletin hau."
+        show:
+          preview: Aurreikusi
+          select_recipients_to_deliver: Hautatu hartzaileak
+          subject: Gaia
+        update:
+          error: Errorea gertatu da buletin hau eguneratzean.
+          success: Buletina zuzen eguneratu da. Mesedez, berrikusi bidali baino lehen.
+      officializations:
+        index:
+          actions: Ekintzak
+          badge: Badge
+          block: Blokeatu Erabiltzailea
+          created_at: Sortua
+          name: izena
+          nickname: Ezizena
+          not_officialized: Ez ofiziala
+          officialize: Officialize
+          officialized: Officialized
+          reofficialize: Reofficialize
+          reports: Txostenak
+          show_email: Erakutsi korreo elektronikoaren helbidea
+          status: Egoera
+          unblock: Desblokeatu erabiltzailea
+          unofficialize: Unofficialize
+        new:
+          badge: Ofizializazio xafla
+          officialize: Officialize
+          title: Erabiltzaile ofiziala "%{name}"
+        show_email_modal:
+          close_modal: Itxi leihoa
+          description: Parte-hartzaile batekin zuzenean harremanetan jarri behar baduzu, Erakutsi botoian klik egin dezakezu helbide elektronikoa ikusteko. Ekintza hori erregistratu egingo da.
+          email_address: Korreo elektronikoaren helbidea
+          full_name: Izen osoa
+          hidden: ezkutua
+          show: Erakutsi
+          title: Erakutsi parte-hartzailearen helbide elektronikoa
+      organization:
+        edit:
+          title: Editatu erakundea
+          update: Eguneratu
+        form:
+          facebook: Facebook
+          github: GitHub
+          instagram: Instagram
+          rich_text_editor_in_public_views_help: Testu-eremu batzuetan, parte-hartzaileek HTML etiketa batzuk txertatu ahal izango dituzte testu-editore aberastua erabiliz.
+          social_handlers: Gizarte
+          twitter: Twitter
+          url: URL
+          youtube: YouTube
+        update:
+          error: Errorea gertatu da erakunde hau eguneratzean.
+          success: Erakundea zuzen eguneratu da.
+      organization_appearance:
+        edit:
+          update: Eguneratu
+        form:
+          colors:
+            colors_title: Antolaketa koloreak
+            colors_warning_html: "\nKontuz! Kolore horiek aldatzeak irisgarritasun-kontrasteak hautsi ditzake. Zure aukeraren kontrastea egiazta dezakezu <a href=\"%{link}\">WebAIM Contrast Checker</a> edo antzeko tresnekin."
+            header_snippets_help: Erabili eremu hau HTML goiburuari gauzak gehitzeko. Erabilerarik ohikoena da JavaScript edo CSS gehigarriak behar dituzten hirugarrenen zerbitzuak txertatzea. Gainera, HTMLari meta-etiketa gehigarriak gehitzeko erabil dezakezu. Kontuan hartu orri publikoetan baino ez dela erakutsiko, ez administrazio atalean.
+          cta_button_path_help: 'Orrialde nagusira deitzeko dei-botoirako esteka gainidatzi dezakezu. Erabili bideak partzialak, ez URL osoak hemen. Letrak, zenbakiak, marrak eta barrak onartzen ditu eta gutun batekin hasi behar duzu. The Call To Action botoian hasierako orrian erakusten da ongietorri testua eta azalpena. Adibidea: %{url}'
+          cta_button_text_help: Hasierako pantailako Call To Action botoian testua gainidatz dezakezu zure erakundeko hizkuntza bakoitzarentzat. Ezartzen bada, balio lehenetsia erabiliko da. The Call To Action botoian hasierako orrian erakusten da ongietorri testua eta azalpena.
+          homepage_appearance_title: Editatu orriaren itxura
+          homepage_highlighted_content_banner_title: Highligted edukien banner
+          images:
+            layout_appearance_title: Editatu itxura diseinua
+            preview: Aurrebistaratu
+          omnipresent_banner_appearance_title: Editatu omnipresent banner
+      organization_external_domain_whitelist:
+        edit:
+          update: Eguneratu
+        external_domain:
+          down: Jaitsi
+          external_domain: Kanpoko domeinua
+          remove: Kendu
+          up: Igo
+        form:
+          add: Gehitu zerrenda zuzrian
+          title: Kanpoko domeinuen zerrenda zuria
+      organization_homepage:
+        edit:
+          active_content_blocks: Eduki bloke aktiboak
+          inactive_content_blocks: Eduki eduki gabeko blokeak
+      participatory_space_private_users:
+        create:
+          error: Errore bat gertatu da partaidetza espazio honen erabiltzaile pribatua gehitzean.
+          success: Zuzen sortu da sarbide pribatua partaidetza-espazioko partaideentzat.
+        destroy:
+          error: Errore bat gertatu da erabiltzaile pribatu bat ezabatzen parte hartzaileentzako.
+          success: Zuzen ezabatu da parte-hartzailearen sarbidea partaidetza-espazio pribaturako.
+        index:
+          import_via_csv: Inportatu CSV bidetik
+          title: Parte-hartze pribatuko espazioko parte-hartzailea
+        new:
+          create: Sortu
+          title: Erabiltzaile pribatuaren parte hartzailea.
+      participatory_space_private_users_csv_imports:
+        create:
+          invalid: Arazo bat sortu da CSV fitxategia irakurtzean. Mesedez, ziurtatu jarraibideei kasu egin diezula.
+        new:
+          example_file: 'Fitxategi eredua:'
+          explanation: 'Igo zure CSV fitxategia. Bizutabe izan behar ditu. Lehenengo zutabean posta elektronikoa jarri behar da, eta azken zutabean parte-hartze prozesura gehitu nahi dutuzun erabiltzaileen izena, goibururik gabe. Ez erabili holako karaktererik erabiltzaileen izenetan: `<>?%&^*#@()[]=+:;"{}\|`.'
+          explanation_example: |
+            john.doe@example.org%{csv_col_sep}John Doe
+            jane.doe@example.org%{csv_col_sep}Jane Doe
+          title: Igo zure CSV artxiboa
+          upload: Igo
+      resource_permissions:
+        edit:
+          submit: Bidali
+          title: Editatu baimenak
+        update:
+          success: Baimenak behar bezala eguneratu dira.
+      resources:
+        index:
+          headers:
+            scope: Esparrua
+      scope_types:
+        create:
+          error: Errore bat gertatu da esparru mota berri bat sortzean.
+          success: Esparru mota arrakastaz sortu da.
+        destroy:
+          success: Esparru mota arrakastaz suntsitu da
+        edit:
+          title: Editatu esparru mota
+          update: Eguneratu
+        new:
+          create: Sortu esparru mota
+          title: Esparru berria
+        update:
+          error: Errore bat gertatu da esparru mota hau eguneratzean.
+          success: Esparru mota arrakastaz eguneratu da
+      scopes:
+        create:
+          error: Errorea gertatu da esparru berri bat sortzean.
+          success: Esparrua zuzen sortu da.
+        edit:
+          title: Editatu helmena
+          update: Eguneratu
+        new:
+          create: Sortu esparrua
+          title: Esparru berria
+        no_scopes: Maila honetan ez dago esparrurik.
+        update:
+          error: Errorea gertatu da esparru hau eguneratzean.
+          success: Esparrua zuzen eguneratu da
+      share_tokens:
+        actions:
+          confirm_destroy: Ziur zaude identifikatzaile hau ezabatu nahi duzula?
+          destroy: Ezabatu
+          share: Partekatu
+        destroy:
+          error: Errore bat gertatu da identifikatzailea ezabatzean.
+          success: Identifikatzailea zuzen ezabatu da.
+        share_tokens:
+          help: Identifikatzaile hauek argitaratu gabeko baliabide hori edozein erabiltzaileri publikoki partekatzeko erabiltzen dira. Errekurtsoa argitaratzean ezkutatuko dira. Egin klik identifikatzailea partekatzeko ikonoan, URL partekagarria bisitatzeko.
+          title: Partekatu identifikatzaileak
+      shared:
+        gallery:
+          add_images: Gehiru irudiak
+          delete_image: Ezabatu irudia
+          gallery_legend: Gehitu irudi-galeria bat (aukerakoa)
+      static_page_topics:
+        create:
+          error: Errore bat gertatu da gai berri bat sortzean.
+          success: Gaia arrakastaz sortu da.
+        edit:
+          title: Editatu gaia
+          update: Eguneratu gaia
+        new:
+          create: Sortu gaia
+          title: Gai berria
+        update:
+          error: Gai hau eguneratzean errorea gertatu da.
+          success: Gaia ondo eguneratu da
+      static_pages:
+        actions:
+          view: Ikusi orri publikoa
+        create:
+          error: Errorea gertatu da orri berri bat sortzean.
+          success: Orria zuzen eguneratu da. Orain, jarrai ezazu faseak konfiguratzen.
+        destroy:
+          success: Orria zuzen ezabatu da.
+        edit:
+          title: Editatu orria
+          update: Eguneratu
+        form:
+          none: Bat ere ez
+          slug_help: 'Erabili ibilbide partzialak, ez URL helbide osoak hemen. Letrak, zenbakiak, gidoiak eta barra diagonalak onartzen ditu, eta letra batez hasi behar du. Adibidea: %{url}'
+        index:
+          last_notable_change: Azken aldaketa nabaria
+        new:
+          create: Sortu orrialdea
+          title: Orri berria
+        topic:
+          destroy: Kendu gaia
+          edit: Editatu gaia
+          without_topic: Gai gabeko orriak
+        update:
+          error: Errorea gertatu da orri hau eguneratzean.
+      titles:
+        admin_log: Admin erregistroa
+        area_types: Area motak
+        areas: Arloak
+        authorization_workflows: Egiaztapen metodoak
+        dashboard: Kontrol-panela
+        impersonatable_users: Erabiltzaile erabilgarriak
+        impersonations: Erabiltzaileen kudeaketa
+        metrics: Metrikak
+        panel: Administratzailea
+        participants: erabiltzaileak
+        scope_types: Esparru motak
+        scopes: Esparruak
+        static_pages: Orriak
+        statistics: Jarduera
+        user_groups: Erabiltzaile-taldeak
+      user_group:
+        csv_verify:
+          invalid: Errore bat gertatu da CSV fitxategia irakurtzean.
+        reject:
+          invalid: Errore bat gertatu da erabiltzaile talde hau arbuiatzerakoan.
+        verify:
+          invalid: Errorea gertatu da erabiltzaile-talde hau egiaztatzean.
+      user_groups:
+        index:
+          state:
+            pending: Zain
+            rejected: Ukatua
+            verified: Egiaztatuta
+          verify_via_csv: Egiaztatu CSV bidez
+      user_groups_csv_verifications:
+        new:
+          example_file: 'Fitxategi eredua:'
+          explanation: Igo zure CSV fitxategia. Zure erakundeko erabiltzaile taldeen mezu elektronikoak fitxategian lehen zutabean izan behar du, goibururik gabe. Zure posta elektronikoa baieztatu duten erabiltzaile taldeek eta CSV fitxategian agertzen diren mezu elektronikoak baliozkotu egingo dira.
+          explanation_example: |
+            acme@example.org
+            bubba.gump@example.org
+          title: Igo zure CSV fitxategia
+          upload: Igo
+      users:
+        create:
+          error: Errorea gertatu da erabiltzaile honi gonbit egitean.
+          success: Ongi egin zaio gonbit erabiltzaileari.
+        destroy:
+          error: Errorea gertatu da erabiltzaile hau ezabatzen saiatzean.
+          success: Erabiltzailea ez da jada administratzailea.
+        form:
+          email: Helbide elektronikoa
+          name: Izena
+          role: Rola
+        new:
+          create: Gonbit egin
+      users_statistics:
+        users_count:
+          admins: Administratzaileak
+          last_day: Azken eguna
+          last_month: Azken hila
+          last_week: Azken astea
+          participants: Parte-hartzaileak
+      view_public_page: Ikusi orri publikoa
+    metrics:
+      blocked_users:
+        object: erabiltzaileak blokeatuta
+        title: Erabiltzaileak blokeatuta
+      reported_users:
+        object: erabiltzaile erreportatuak
+        title: Erabiltzaile erreportatuak
+      user_reports:
+        object: erabiltzailearen txostenak
+        title: Erabiltzailearen txostenak
+    moderations:
+      actions:
+        expand: Zabaldu
+        hidden: ' Ezkutatuta'
+        hide: Ezkutatu
+        not_hidden: Ezkutatu gabe
+        title: Ekintzak
+        unhide: Erakutsi
+        unreport: Ezeztatu salaketa
+      admin:
+        reportable:
+          hide:
+            invalid: Errorea gertatu da edukia ezkutatzean.
+            success: Edukia zuzen ezkutatu da.
+          unhide:
+            invalid: Arazo bat izan da baliabidea desegiteko.
+            success: Ongi desezkutatutako edukia.
+          unreport:
+            invalid: Arazo bat izan da salaketa ezeztatzean.
+            success: Salaketa zuzen ezeztatu da.
+      models:
+        moderation:
+          fields:
+            hidden_at: Ezkutatze-data
+            participatory_space: Parte hartzeko esparrua
+            reportable_id: ID
+            reportable_type: Mota
+            reported_content_url: Emandako edukiaren URLa
+            visit_url: Bisitatu URLa
+        report:
+          fields:
+            details: Arrazoiaren xehetasunak
+            locale: Hizkuntza
+            reason: Arrazoia
+  errors:
+    messages:
+      invalid_json: JSON baliogabea
+  layouts:
+    decidim:
+      admin:
+        newsletters:
+          title: Buletinak
+        settings:
+          title: Ezarpenak
+        users:
+          title: Erabiltzaileak

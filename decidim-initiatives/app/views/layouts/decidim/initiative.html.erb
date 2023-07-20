@@ -1,0 +1,19 @@
+<%= append_javascript_pack_tag "decidim_initiatives" %>
+<%= append_stylesheet_pack_tag "decidim_initiatives", media: "all" %>
+
+<%= render "layouts/decidim/redesigned_application" do %>
+  <%= render layout: "layouts/decidim/shared/layout_center" do %>
+    <main>
+      <%= yield %>
+    </main>
+    <% if content_for? :expanded %>
+      <div class="expanded">
+        <div class="wrapper wrapper--inner">
+          <div class="row">
+            <%= yield :expanded %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>

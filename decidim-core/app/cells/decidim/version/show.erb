@@ -1,0 +1,6 @@
+<h2 class="h2 decorator"><%= i18n_changes_title %></h2>
+<div class="version__author">
+  <%= render_resource_editor(current_version) %>
+</div>
+
+<%= cell("decidim/diff", current_version, path:) %>

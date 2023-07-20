@@ -1,0 +1,253 @@
+pt-BR:
+  activemodel:
+    attributes:
+      budget:
+        decidim_scope_id: Escopo
+        description: Descrição
+        title: Título
+        total_budget: Orçamento total
+        weight: Posição do pedido
+      project:
+        budget_amount: Valor do orçamento
+        decidim_category_id: Categoria
+        decidim_scope_id: Âmbito
+        description: Descrição
+        proposal_ids: Propostas relacionadas
+        selected: Selecionado para implementação
+        title: Título
+  activerecord:
+    models:
+      decidim/budgets/project:
+        one: Projeto
+        other: Projetos
+  decidim:
+    budgets:
+      actions:
+        attachment_collections: Pastas
+        attachments: Anexos
+        confirm_destroy: Deseja mesmo excluir este projeto?
+        destroy: Excluir
+        edit: Editar
+        edit_projects: Gerenciar projetos
+        import: Importar propostas para os projetos
+        new: Novo %{name}
+        preview: Pré-visualização
+        title: Ações
+      admin:
+        budgets:
+          edit:
+            title: Editar orçamento
+            update: Atualizar orçamento
+          index:
+            finished_orders: Votos finalizados
+            pending_orders: Votos pendentes
+            title: Orçamentos
+            users_with_finished_orders: Usuários com votos finalizados
+            users_with_pending_orders: Usuários com votos pendentes
+          new:
+            create: Criar orçamento
+            title: Novo orçamento
+        exports:
+          projects: Projetos
+        models:
+          budget:
+            name: Orçamento
+          project:
+            name: Projeto
+        projects:
+          edit:
+            title: Editar projeto
+            update: Atualizar
+          index:
+            finished_orders: Votos finais
+            pending_orders: Votações pendentes
+            selected: Selecionado
+            title: Projetos
+          new:
+            create: Criar
+            title: Novo projeto
+        proposals_imports:
+          new:
+            create: Importar propostas para projetos
+            no_components: Não há outros componentes da proposta neste espaço participativo para importar as propostas para projetos.
+            select_component: Selecione um componente
+            title: Importar propostas
+      admin_log:
+        budget:
+          create: "%{user_name} criou o orçamento %{resource_name} no espaço %{space_name}"
+          delete: "%{user_name} excluiu o orçamento %{resource_name} no espaço %{space_name}"
+          update: "%{user_name} atualizou o orçamento %{resource_name} no espaço %{space_name}"
+        project:
+          create: "%{user_name} criou o projeto %{resource_name} no espaço %{space_name}"
+          delete: "%{user_name} excluiu o projeto %{resource_name} no espaço %{space_name}"
+          update: "%{user_name} atualizou o projeto %{resource_name} no espaço %{space_name}"
+      budget:
+        view: Ver todos os projetos orçamentais
+      budget_information_modal:
+        back_to: Voltar para %{component_name}
+        close_modal: Fechar modal
+        continue: Continuar
+        more_information: Mais informação
+      budgets_list:
+        cancel_order:
+          more_than_one: exclua seu voto em %{name} e comece de novo
+          only_one: exclua seu voto e comece novamente.
+        highlighted_cta: Votar em %{name}
+        my_budgets: Meus orçamentos
+      limit_announcement:
+        limit_reached: Você tem votos ativos em %{links}. Para votar neste orçamento você deve <a href="%{landing_path}">excluir seu voto e começar do zero</a>.
+      models:
+        budget:
+          fields:
+            name: Nome
+            projects_count: Contagem de projetos
+            total_budget: Orçamento total
+        project:
+          fields:
+            title: Título
+      order_summary_mailer:
+        order_summary:
+          selected_projects: 'Os projetos que você selecionou são:'
+          subject: Você votou no espaço participativo %{space_name}
+          voted_on_space: Você votou no orçamento %{budget_name} para o espaço participativo %{space_name}.
+          voted_on_space_with_scope: Você votou no orçamento %{budget_name} para o espaço participativo %{space_name} em %{scope_name} (%{scope_type}).
+      projects:
+        budget_confirm:
+          are_you_sure: Se mudar de ideia, você pode mudar de voto mais tarde.
+          cancel: Cancelar
+          confirm: confirme
+          description: Estes são os projetos que você escolheu para fazer parte do orçamento.
+          title: Confirmar votação
+        budget_excess:
+          budget_excess:
+            title: O orçamento máximo excedeu
+          close: Fechar
+          ok: OK
+          projects_excess:
+            title: Máximo de projetos excedido
+        budget_summary:
+          are_you_sure: Deseja mesmo cancelar o seu voto?
+          assigned: 'Atribuído:'
+          cancel_order: exclua seu voto e comece de novo
+          checked_out:
+            title: Votação do orçamento concluída
+          minimum_projects_rule:
+            description: Em que projetos julga que devemos alocar o orçamento? Selecione pelo menos %{minimum_number} projeto que você deseja e vote de acordo com suas preferências para definir o orçamento.
+            instruction: "<li>Selecione pelo menos %{minimum_number} projetos que você deseja e vote de acordo com suas preferências para definir o orçamento.</li>"
+          projects_rule:
+            description: Em que projetos julga que devemos alocar o orçamento? Selecione pelo menos %{minimum_number} e até %{maximum_number} projetos que você deseja e vote de acordo com suas preferências para definir o orçamento.
+            instruction: "<li>Selecione pelo menos %{minimum_number} e até %{maximum_number} projetos que você deseja e vote de acordo com suas preferências para definir o orçamento.</li>"
+          projects_rule_maximum_only:
+            description: Em que projetos julga que devemos alocar o orçamento? Selecione até %{maximum_number} projetos que você deseja e vote de acordo com suas preferências para definir o orçamento.
+            instruction: "<li>Selecione até %{maximum_number} projetos que você desejar e vote de acordo com suas preferências para definir o orçamento.</li>"
+          rules:
+            title: Regras do orçamento
+          title: Você decide o orçamento
+          total_budget: Orçamento total
+          total_projects: Total de votos
+          vote_threshold_percent_rule:
+            description: Em que projetos julga que devemos alocar o orçamento? Atribua pelo menos %{minimum_budget} aos projetos que você deseja e vote de acordo com suas preferências para definir o orçamento.
+            instruction: "<li>Atribua pelo menos %{minimum_budget} aos projetos que você deseja e vote de acordo com suas preferências para definir o orçamento.</li>"
+        count:
+          projects_count:
+            one: 1 projeto
+            other: "%{count} projetos"
+        filters:
+          category: Categoria
+          scope: Âmbito
+          search: Pesquisa
+          status: Status
+          status_values:
+            all: Todos
+            not_selected: Não selecionado
+            selected: Selecionado
+        filters_small_view:
+          close_modal: Fechar modal
+          filter: Filtro
+          filter_by: Filtrar por
+          unfold: Desdobrar
+        order_progress:
+          vote: Voto
+        order_selected_projects:
+          remove: Remover
+          selected_projects:
+            one: projeto selecionado
+            other: projetos selecionados
+          view: Visão
+        orders:
+          highest_cost: Custo mais alto
+          label: Ordenar projetos por
+          lowest_cost: Custo mais baixo
+          most_voted: Mais votado
+          random: Ordem aleatória
+          selected: Selecionado
+        project:
+          selected: Selecionado
+          view: Ver
+          votes:
+            one: voto
+            other: votos
+        project_budget_button:
+          add: Adicione ao seu voto
+          added: Adicionado ao seu voto
+        projects_for: Projetos para %{name}
+        show:
+          budget: Orçamento
+          view_all_projects: Ver todos os projetos
+    components:
+      budgets:
+        actions:
+          vote: Voto
+        name: Orçamentos
+        settings:
+          global:
+            announcement: Anúncio
+            comments_enabled: Comentários ativados
+            comments_max_length: Tamanho máximo de comentários (deixe 0 para o valor padrão)
+            landing_page_content: Página inicial dos orçamentos
+            more_information_modal: Modal de mais informação
+            projects_per_page: Projetos por página
+            resources_permissions_enabled: Permissões de ações podem ser definidas para cada projeto
+            scope_id: Escopo
+            scopes_enabled: Escopos habilitados
+            title: Título
+            total_budget: Orçamento total
+            vote_minimum_budget_projects_number: Número mínimo de projetos para votar
+            vote_rule_minimum_budget_projects_enabled: 'Habilitar regra: Número mínimo de projetos a serem votados em'
+            vote_rule_threshold_percent_enabled: 'Ativar regra: Porcentagem mínima do orçamento'
+            vote_selected_projects_maximum: Quantidade máxima de projetos a serem selecionados
+            vote_selected_projects_minimum: Quantidade mínima de projetos a serem selecionados
+            vote_threshold_percent: Porcentagem do limiar de voto
+            workflow: Fluxo de Trabalho
+            workflow_choices:
+              all: 'Votar em todos: permite que os participantes votem em todos os orçamentos.'
+              one: 'Vote em um: permite que os participantes votem em qualquer orçamento, mas apenas em um.'
+          step:
+            announcement: Anúncio
+            comments_blocked: Comentários bloqueados
+            highlighted_heading: Cabeçalho destacado
+            landing_page_content: Página inicial dos orçamentos
+            list_heading: Cabeçalho da lista
+            more_information_modal: Modal de mais informação
+            show_votes: Mostrar votos
+            title: Título
+            votes: Votação
+            votes_choices:
+              disabled: Votação desativada
+              enabled: Votação habilitada
+              finished: Votação finalizada
+    events:
+      budgets:
+        budget_published:
+          email_intro: 'O orçamento %{resource_title} agora está ativo para %{participatory_space_title}. Você pode vê-lo a partir desta página:'
+          email_outro: Você recebeu esta notificação porque está seguindo %{participatory_space_title}. Você pode parar de receber notificações após o link anterior.
+          email_subject: O orçamento %{resource_title} agora está ativo para %{participatory_space_title}.
+          notification_title: O orçamento <a href="%{resource_path}">%{resource_title}</a> agora está ativo para %{participatory_space_title}.
+    resource_links:
+      included_proposals:
+        project_proposal: Propostas incluídas neste projeto
+    statistics:
+      orders_count: Suportes
+      projects_count: Projetos
+  index:
+    confirmed_orders_count: Contagem de votos

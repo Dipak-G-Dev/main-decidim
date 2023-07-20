@@ -1,0 +1,27 @@
+<%= append_javascript_pack_tag "decidim_initiatives" %>
+<%= append_stylesheet_pack_tag "decidim_initiatives", media: "all" %>
+
+<%
+edit_link(
+  decidim_admin_initiatives.initiatives_path,
+  :read,
+  :initiative
+)
+%>
+
+<% content_for :aside do %>
+  <h1 class="h1 decorator"><%= component_name %></h1>
+  <%= render partial: "new_initiative_button" %>
+
+  <%= render layout: "decidim/shared/filters", locals: { filter_sections: , search_variable: :search_text_cont } do %>
+    <%= hidden_field_tag :order, order, id: nil, class: "order_filter" %>
+  <% end %>
+<% end %>
+
+<%= render layout: "layouts/decidim/shared/layout_two_col" do %>
+  <%= participatory_space_wrapper do %>
+    <div id="initiatives">
+      <%= render partial: "initiatives" %>
+    </div>
+  <% end %>
+<% end %>

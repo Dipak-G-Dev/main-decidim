@@ -1,0 +1,37 @@
+name: "[CI] Templates"
+on:
+  push:
+    branches:
+      - develop
+      - release/*
+      - "*-stable"
+  pull_request:
+    branches-ignore:
+      - "chore/l10n*"
+    paths:
+      - "*"
+      - ".github/**"
+      - "decidim-admin/**"
+      - "decidim-core/**"
+      - "decidim-dev/**"
+      - "decidim-forms/**"
+      - "decidim-module-templates/**"
+      - "decidim-templates/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build_app:
+    uses: ./.github/workflows/build_app.yml
+    secrets: inherit
+    name: Build test application
+  main:
+    needs: build_app
+    name: Tests
+    uses: ./.github/workflows/test_app.yml
+    secrets: inherit
+    with:
+      working-directory: "decidim-templates"
+      test_command: REDESIGN_ENABLED="false" bundle exec parallel_test --type rspec --pattern spec/
